@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Zippy</title>
+</head>
+<body>
+
+    <header class="main-header" id="sildeshow">
+        <div class="logo"><a href="#">ZIPPY</a></div>
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon"><span class="menu-icon__line"></span></label>
+        <ul class="nav-links">
+            <li class="nav-link"><a href="#">Home</a></li>
+            <li class="nav-link"><a href="#projects">Projects</a></li>
+            <li class="nav-link"><a href="#pricing">Pricing</a></li>
+            <li class="nav-link"><a href="#team">Team</a></li>
+            <li class="nav-link"><a href="#blog">Blog</a></li>
+            <li class="nav-link"><a href="#contact">Contact</a></li>
+        </ul>
+
+    </header>
+
+    <section id="hero">
+        <div class="hero">
+            <h1>One page promising to fill all your needs!</h1><br>
+            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa magnam enim consequatur eligendi
+                dignissimos
+                repellat rem in a facere natus.</h3><br>
+            <div class="button-grp">
+                <button>Learn More</button>
+                <button>Contact</button>
+            </div>
+            <div class="slideshow-navigation">
+                <button onClick=jumpToSlide(0) type="radio"></button>
+                <button onClick=jumpToSlide(1) type="radio"></button>
+                <button onClick=jumpToSlide(2) type="radio"></button>
+                <button onClick=jumpToSlide(3) type="radio"></button>
+                <button onClick=jumpToSlide(4) type="radio"></button>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="welcome">
+        <div class="container">
+            <div class="welcome">
+                <h1>Welcome to Zippy!</h1>
+                <div class="info">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex totam rem consequatur soluta cumque
+                        consectetur dolore deserunt accusantium doloremque possimus.</p>
+                    <i class="fa fa-10x fa-umbrella"></i>
+                </div>
+                <div class="main-services">
+                    <div class="services">
+                        <i class="far fa-bell"></i>
+                        <h3>Lorem, ipsum.</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, culpa.</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="services">
+                        <i class="far fa-envelope"></i>
+                        <h3>Lorem, ipsum.</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, culpa.</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="services">
+                        <i class="far fa-newspaper"></i>
+                        <h3>Lorem, ipsum.</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, culpa.</p>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin:2.5rem;">
+        </div>
+    </section>
+
+    <section id="projects">
+        <center>
+            <h1 style="margin:2.5rem;">Projects</h1>
+        </center>
+        <div class="projects">
+            <div class="project">
+                <img src="https://neededapps.com/assets/img/thumbnails/TT-WTL-Capture-2.jpg" alt="project1">
+                <h4>Title</h4>
+                <p>Discription</p>
+                <button>Launch Case Study</button>
+            </div>
+            <div class="project">
+                <img src="https://neededapps.com/assets/img/thumbnails/TT-WTL-Capture-2.jpg" alt="project2">
+
+                <h4>Title</h4>
+                <p>Discription</p>
+                <button>Launch Case Study</button>
+            </div>
+            <div class="project">
+                <img src="https://neededapps.com/assets/img/thumbnails/TT-WTL-Capture-2.jpg" alt="project3">
+                <h4>Title</h4>
+                <p>Discription</p>
+                <button>Launch Case Study</button>
+            </div>
+            <div class="project">
+                <img src="https://neededapps.com/assets/img/thumbnails/TT-WTL-Capture-2.jpg" alt="project4">
+                <h4>Title</h4>
+                <p>Discription</p>
+                <button>Launch Case Study</button>
+            </div>
+            <div class="project">
+                <img src="https://neededapps.com/assets/img/thumbnails/TT-WTL-Capture-2.jpg" alt="project5">
+                <h4>Title</h4>
+                <p>Discription</p>
+                <button>Launch Case Study</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="pricing">
+        <div class="container">
+            <div class="pricing">
+                <h1>Pricing Table</h1>
+                <div class="pricing-panel">
+                    <div class="standard">
+                        <h3>Standard Plan</h3>
+                        <price>Free</price>
+                        <ul>
+                            <li>2 GB Available</li>
+                            <li>15 max contacts</li>
+                            <li>30 messages/month</li>
+                            <li>Disgusting ads</li>
+                        </ul>
+                        <button>Buy</button>
+                    </div>
+                    <div class="business">
+                        <h3>Business Plan</h3>
+                        <price>19$/month</price>
+                        <ul>
+                            <li>10 GB Available</li>
+                            <li>75 max contacts</li>
+                            <li>120 messages/month</li>
+                            <li>Ads free</li>
+                        </ul>
+                        <button>Buy</button>
+                    </div>
+                    <div class="premium">
+                        <h3>Premium Plan</h3>
+                        <price>114$/month</price>
+                        <ul>
+                            <li>100 GB Available</li>
+                            <li>Unlimited contacts</li>
+                            <li>Unlimited messages/month</li>
+                            <li>Ads free</li>
+                        </ul>
+                        <button>Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- video project -->
+    <section id="video-projects">
+        <div class="video-projects">
+            <h1>Video Projects</h1>
+            <div class="video-slider">
+                <div class="project-video">
+                    <iframe src="https://www.youtube.com/embed/Uh9643c2P6k" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="project-video">
+                    <iframe src="https://www.youtube.com/embed/Uh9643c2P6k" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="project-video">
+                    <iframe src="https://www.youtube.com/embed/Uh9643c2P6k" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="project-video">
+                    <iframe src="https://www.youtube.com/embed/Uh9643c2P6k" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="project-video">
+                    <iframe src="https://www.youtube.com/embed/Uh9643c2P6k" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="project-video">
+                    <iframe src="https://www.youtube.com/embed/Uh9643c2P6k" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="project-video">
+                    <iframe src="https://www.youtube.com/embed/Uh9643c2P6k" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="project-video">
+                    <iframe src="https://www.youtube.com/embed/Uh9643c2P6k" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Zippy Team -->
+    <section id="team">
+        <div class="container">
+            <h1>Zippy Team</h1>
+            <div class="team">
+                <div class="member">
+                    <div class="icons">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+                    <name>SARA JHONSON</name><br>
+                    <designation>Creative Head</designation>
+                </div>
+                <div class="member">
+                    <div class="icons">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+                    <name>SARA JHONSON</name><br>
+                    <designation>Creative Head</designation>
+                </div>
+                <div class="member">
+                    <div class="icons">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+                    <name>MATT ALEX</name><br>
+                    <designation>Art Director</designation>
+                </div>
+                <div class="member">
+                    <div class="icons">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+                    <name>CHRIS PHILIPS</name><br>
+                    <designation>Creative Head</designation>
+                </div>
+                <div class="member">
+                    <div class="icons">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+                    <name>JIMMY SMITH</name><br>
+                    <designation>Creative Head</designation>
+                </div>
+                <div class="member">
+                    <div class="icons">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+                    <name>CELEIN JOHN</name>
+                    <designation>Creative Head</designation>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Life in Zippy -->
+    <section id="life">
+        <div class="life-wrapper">
+            <h1>Life in Zippy!</h1>
+            <div class="banner">
+                <img src="./assets/images/life/life1.jpeg" alt="">
+            </div>
+            <div class="selector">
+                <div class="arrow left-arrow">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="gallery">
+                    <img src="./assets/images/life/life1.jpeg" onclick="lifeImageFocus(0)" alt="Life Image">
+                    <img src="./assets/images/life/life2.jpeg" onclick="lifeImageFocus(1)" alt="Life Image">
+                    <img src="./assets/images/life/life3.jpeg" onclick="lifeImageFocus(2)" alt="Life Image">
+                    <img src="./assets/images/life/life4.jpeg" onclick="lifeImageFocus(3)" alt="Life Image">
+                    <img src="./assets/images/life/life5.jpeg" onclick="lifeImageFocus(4)" alt="Life Image">
+                    <img src="./assets/images/life/life6.jpeg" onclick="lifeImageFocus(5)" alt="Life Image">
+                    <img src="./assets/images/life/life7.jpeg" onclick="lifeImageFocus(6)" alt="Life Image">
+                    <img src="./assets/images/life/life8.jpeg" onclick="lifeImageFocus(7)" alt="Life Image">
+
+                </div>
+                <div class="arrow right-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- newsletter -->
+    <section id="newsletter">
+        <div class="newsletter">
+            <h1> Newsletter Signup</h1>
+            <input type="email" name="email" id="emailNewsletter" placeholder="abc@example.com" />
+            <button>SIGN UP</button>
+        </div>
+    </section>
+
+
+    <section id="blog">
+        <div class="container">
+            <h1>Blog</h1>
+            <div class="blog-wrapper">
+                <div class="blog">
+                    <img src="./assets/images/life/life3.jpeg" alt="" /><br>
+                    <heading>Lorem ipsum dolor sit amet</heading><br>
+                    <date>Aug 15, 2021</date><br>
+                    <discription>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ipsam accusantium cum et
+                        atque, officia laboriosam consectetur ab at hic perferendis eum, temporibus delectus fuga?
+                    </discription><br>
+                    <button>Read More</button><br>
+                </div>
+                <div class="blog">
+                    <img src="./assets/images/life/life3.jpeg" alt="" /><br>
+                    <heading>Lorem ipsum dolor sit amet</heading><br>
+                    <date>Aug 15, 2021</date><br>
+                    <discription>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ipsam accusantium cum et
+                        atque, officia laboriosam consectetur ab at hic perferendis eum, temporibus delectus fuga?
+                    </discription><br>
+                    <button>Read More</button><br>
+                </div>
+                <div class="blog">
+                    <img src="./assets/images/life/life3.jpeg" alt="" /><br>
+                    <heading>Lorem ipsum dolor sit amet</heading><br>
+                    <date>Aug 15, 2021</date><br>
+                    <discription>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ipsam accusantium cum et
+                        atque, officia laboriosam consectetur ab at hic perferendis eum, temporibus delectus fuga?
+                    </discription><br>
+                    <button>Read More</button><br>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <div class="contact-form-container">
+            <div class="map"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14962.726246815948!2d85.8152921!3d20.3547697!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa033051ccddbbcbc!2sKalinga%20Institute%20of%20Industrial%20Technology!5e0!3m2!1sen!2sin!4v1629133183870!5m2!1sen!2sin"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+            <div class="contact-form">
+                <h1>Contact</h1>
+                <form action="#">
+                    <br><label for="name">Name</label><br>
+                    <input type="text" name="name" id="name">
+
+                    <br><br><label for="email">Email-Address</label><br>
+                    <input type="email" name="email" id="email">
+
+                    <br><br><label for="subject">Subject</label><br>
+                    <input type="text" name="subject" id="subject">
+
+                    <br><br><label for="message">Message</label><br>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="container">
+            <div class="footer">
+                <div class="office-address">
+                    <h4>Office Address</h4>
+                    <em>Lorem ipsum dolor 233<br> 1200 consectetur <br> adipisicing</em>
+                </div>
+                <div class="follow-us">
+                    <h4>Follow Us</h4>
+                    <div class="icons">
+                        <i class="fab fa-behance"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i><br>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-google-plus-g"></i>
+                        <i class="fab fa-tumblr"></i>
+                    </div>
+
+                </div>
+                <div class="contact-us">
+                    <h4>Contact Us</h4>
+                    <em>zippy@skype<br>enquiry@zippy.com</em>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

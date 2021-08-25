@@ -1,0 +1,59 @@
+.container {
+    h1 {
+        text-align: center;
+        margin: 5rem 0 4rem 0;
+    }
+    .team {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(31%, 1fr));
+        grid-row-gap: 7rem;
+        grid-column-gap: 1.5rem;
+        min-width: 100%;
+
+        .member {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            justify-self: center;
+            align-self: center;
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+
+            .icons {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 1.2rem;
+            }
+            &:hover {
+                .icons {
+                    background: rgba($color: #61497b, $alpha: 0.7);
+                }
+                i {
+                    display: inline-block;
+                }
+            }
+            i {
+                margin: 0.5rem;
+                z-index: 10;
+                display: none;
+                color: #fff;
+                transform: scale(1.5);
+                cursor: pointer;
+            }
+            name {
+                font-weight: bold;
+                font-size: 0.9rem;
+            }
+            designation {
+                color: rgba($color: #000, $alpha: 0.4);
+                font-size: smaller;
+            }
+        }
+    }
+}

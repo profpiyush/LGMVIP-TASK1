@@ -1,0 +1,179 @@
+@media only screen and (max-width: 767px) {
+    .main-header {
+        .menu-icon {
+            display: block;
+        }
+
+        .nav-links {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100vw;
+            height: auto;
+            font-size: 2rem;
+            background: #272727;
+            transition: opacity 0.8s 0.5s, clip-path 1s 0.5s;
+            clip-path: circle(0px at top right);
+            padding-top: 3rem;
+            overflow-y: auto;
+
+            .nav-link {
+                opacity: 0;
+                transform: translateX(100%);
+                width: 100%;
+                text-align: center;
+
+                a {
+                    display: block;
+                    padding: 1rem 0;
+                }
+            }
+        }
+
+        .menu-btn:checked ~ .nav-links {
+            opacity: 1;
+            clip-path: circle(100% at center);
+
+            .nav-link {
+                opacity: 1;
+                transform: translate(0);
+                transition: opacity 0.3s ease-in-out, transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+                &:nth-of-type(1) {
+                    transition-delay: 0.4s;
+                }
+                &:nth-of-type(2) {
+                    transition-delay: 0.45s;
+                }
+                &:nth-of-type(3) {
+                    transition-delay: 0.5s;
+                }
+                &:nth-of-type(4) {
+                    transition-delay: 0.55s;
+                }
+                &:nth-of-type(5) {
+                    transition-delay: 0.6s;
+                }
+                &:nth-of-type(6) {
+                    transition-delay: 0.65s;
+                }
+                &:nth-of-type(7) {
+                    transition-delay: 0.7s;
+                }
+            }
+        }
+        .menu-btn:checked ~ .menu-icon {
+            .menu-icon__line {
+                background: #272727;
+
+                &::before {
+                    transform: rotate(45deg);
+                }
+                &::after {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+    .hero {
+        transition: all 0.2s ease;
+        h1 {
+            font-size: 1.8rem;
+        }
+        h3 {
+            display: none;
+        }
+        .slideshow-navigation {
+            button[type="radio"] {
+                transform: translateY(80px);
+                border-radius: 50%;
+                width: 0.6rem;
+                height: 0.6rem;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .welcome {
+        p {
+            max-width: 90%;
+        }
+        .fa-umbrella {
+            display: none;
+        }
+        .main-services {
+            flex-direction: column;
+        }
+    }
+
+    .projects {
+        width: 100vw;
+        .project {
+            min-width: 75%;
+            img {
+                width: 100%;
+                height: 50%;
+            }
+            button {
+                transform: scale(0.5);
+            }
+        }
+    }
+
+    .pricing {
+        .pricing-panel {
+            flex-direction: column;
+
+            div {
+                margin-bottom: 3rem;
+            }
+            .business {
+                border-top: 2px solid #272727;
+                border-bottom: 2px solid #272727;
+                padding: 3rem 0;
+            }
+        }
+    }
+    .life-wrapper {
+        padding: 10% 0 !important;
+    }
+    .newsletter {
+        padding-top: 5rem !important;
+    }
+    .contact-form-container {
+        flex-direction: column;
+
+        .contact-form {
+            form {
+                min-width: 100vw;
+                input,
+                textarea,
+                button {
+                    padding: 0.8rem 1.01rem;
+                    width: 80vw;
+                }
+            }
+        }
+    }
+    .footer {
+        grid-template-areas:
+            "office follow follow"
+            "contact contact contact";
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .pricing {
+        .pricing-panel {
+            .business {
+                border-right: 2px solid #272727;
+                border-left: 2px solid #272727;
+                padding: 0 3rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.container {
+    .blog-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(27%, 1fr));
+        grid-row-gap: 7rem;
+        grid-column-gap: 2.5rem;
+        .blog {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            img {
+                width: 100%;
+                height: 50%;
+            }
+            button {
+                padding: 0.8rem 1.01rem;
+                background: #ffe26d;
+                border: none;
+                cursor: pointer;
+
+                &:hover {
+                    background: #61497c;
+                    color: white;
+                }
+            }
+            heading {
+                text-transform: uppercase;
+                font-weight: bold;
+                margin-top: 10px;
+            }
+            date {
+                color: rgba($color: #000, $alpha: 0.4);
+                font-size: smaller;
+            }
+        }
+    }
+}
